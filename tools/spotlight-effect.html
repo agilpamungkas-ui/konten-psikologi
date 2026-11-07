@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#0B0F17}
+body{font-family:"Inter Display","Inter",sans-serif;color:#F4F6FA}
+#bg{position:absolute;inset:-200px;background-image:linear-gradient(rgba(255,255,255,.045) 2px,transparent 2px),linear-gradient(90deg,rgba(255,255,255,.045) 2px,transparent 2px);background-size:90px 90px}
+#glow{position:absolute;width:1300px;height:1300px;border-radius:50%;left:-110px;top:300px;background:radial-gradient(circle,rgba(255,210,63,.20),rgba(255,210,63,0) 65%)}
+#glow2{position:absolute;width:1100px;height:1100px;border-radius:50%;left:300px;top:900px;background:radial-gradient(circle,rgba(255,90,95,.14),rgba(255,90,95,0) 65%)}
+.it{position:absolute;left:0;right:0;text-align:center;opacity:0;will-change:transform,opacity}
+.big{font-weight:800;font-size:128px;line-height:1.02;letter-spacing:-3px}
+.mid{font-weight:700;font-size:86px;line-height:1.1;letter-spacing:-1.5px}
+.sm{font-weight:500;font-size:56px;line-height:1.25;color:#AEB6C6}
+.y{color:#FFD23F}.r{color:#FF5A5F}.g{color:#5BE49B}
+.pill{display:inline-block;padding:22px 46px;border-radius:999px;background:#FFD23F;color:#0B0F17;font-weight:800;font-size:58px}
+.num{display:inline-block;font-weight:900;font-size:150px;color:#0B0F17;background:#FFD23F;border-radius:40px;width:230px;height:230px;line-height:230px;letter-spacing:-4px}
+.card{position:absolute;left:90px;right:90px;top:640px;height:760px;border-radius:56px;background:rgba(255,255,255,.055);border:3px solid rgba(255,255,255,.10);opacity:0}
+.dots{position:absolute;top:250px;left:0;right:0;display:flex;justify-content:center;gap:26px;opacity:0}
+.dot{width:150px;height:14px;border-radius:7px;background:rgba(255,255,255,.15);overflow:hidden}
+.dot i{display:block;height:100%;width:0;background:#FFD23F}
+.handle{position:absolute;bottom:150px;left:0;right:0;text-align:center;font-weight:600;font-size:40px;color:#6F7889;opacity:0}
+svg{display:block;margin:0 auto}
+</style></head><body>
+<div id="bg"></div><div id="glow"></div><div id="glow2"></div>
+
+<!-- S1 hook -->
+<div class="it big" id="h1" style="top:600px">Salah ngomong</div>
+<div class="it big" id="h2" style="top:750px"><span class="y">1 kata,</span></div>
+<div class="it mid" id="h3" style="top:920px">kepikiran<br>sampai malam?</div>
+<div class="it" id="h4" style="top:1180px"><svg width="220" height="220" viewBox="0 0 220 220"><path d="M110 20 L40 190 H180Z" fill="rgba(255,210,63,.25)" stroke="#FFD23F" stroke-width="8" stroke-linejoin="round"/><circle cx="110" cy="22" r="18" fill="#FFD23F"/></svg></div>
+
+<!-- S2 empati -->
+<div class="it big y" id="e1" style="top:700px">Wajar kok.</div>
+<div class="it mid" id="e2" style="top:900px">Rasanya semua orang<br>memperhatikan kita.</div>
+
+<!-- S3 transisi -->
+<div class="it mid" id="t1" style="top:720px">Psikologi menyebutnya</div>
+<div class="it" id="t2" style="top:900px"><span class="pill">Spotlight effect</span></div>
+<div class="it sm" id="t3" style="top:1060px">merasa disorot lampu panggung</div>
+
+<div class="dots" id="dots"><div class="dot"><i id="d1"></i></div><div class="dot"><i id="d2"></i></div><div class="dot"><i id="d3"></i></div></div>
+<div class="card" id="card"></div>
+
+<!-- S4 -->
+<div class="it" id="a0" style="top:720px"><span class="num">01</span></div>
+<div class="it mid" id="a1" style="top:1010px">Peserta disuruh pakai<br><span class="y">kaos memalukan</span></div>
+<div class="it sm" id="a2" style="top:1240px">masuk ruangan penuh orang</div>
+<!-- S5 -->
+<div class="it" id="b0" style="top:720px"><span class="num">02</span></div>
+<div class="it mid" id="b1" style="top:1010px">Tebakan mereka:<br><span class="r">±50%</span> sadar</div>
+<div class="it sm" id="b2" style="top:1240px">"pasti separuh orang lihat"</div>
+<!-- S6 -->
+<div class="it" id="c0" style="top:720px"><span class="num">03</span></div>
+<div class="it mid" id="c1" style="top:1010px">Kenyataannya:<br><span class="g">±25%</span> saja</div>
+<div class="it sm" id="c2" style="top:1240px">kira-kira 1 dari 4 orang</div>
+
+<!-- S7 insight -->
+<div class="it mid" id="i1" style="top:680px">Orang lain sibuk</div>
+<div class="it mid" id="i2" style="top:800px">dengan <span class="y">sorotan</span><br><span class="y">mereka sendiri.</span></div>
+<div class="it sm" id="i3" style="top:1080px">Riset Gilovich dkk., 2000</div>
+
+<!-- S8 aksi -->
+<div class="it mid" id="k1" style="top:520px">Lain kali, tanya diri:</div>
+<div class="it mid" id="k2" style="top:660px"><span class="y">"Seminggu lagi,<br>masih ada yang ingat?"</span></div>
+<div class="it" id="k3" style="top:1000px"><svg width="170" height="170" viewBox="0 0 170 170"><path d="M45 20 H125 V150 L85 118 L45 150Z" fill="#FFD23F"/></svg></div>
+<div class="it mid" id="k4" style="top:1210px">Simpan &amp; follow</div>
+<div class="it sm" id="k5" style="top:1320px">psikologi populer, bukan diagnosis</div>
+<div class="handle" id="hd">#psikologipopuler</div>
+
+<script>
+const D=30;
+const cl=(x)=>Math.max(0,Math.min(1,x));
+const eo=(x)=>1-Math.pow(1-x,3);
+const eb=(x)=>{const c=1.7,c3=c+1;return 1+c3*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const $=(id)=>document.getElementById(id);
+// [id, in, out, type]
+const S=[
+ ['h1',0.05,3.3,'up'],['h2',0.4,3.3,'pop'],['h3',0.9,3.3,'up'],['h4',1.5,3.3,'pop'],
+ ['e1',3.5,6.9,'pop'],['e2',4.2,6.9,'up'],
+ ['t1',7.1,10.0,'up'],['t2',7.8,10.0,'pop'],['t3',8.5,10.0,'up'],
+ ['a0',10.2,13.9,'pop'],['a1',10.6,13.9,'up'],['a2',11.5,13.9,'up'],
+ ['b0',14.1,17.6,'pop'],['b1',14.5,17.6,'up'],['b2',15.4,17.6,'up'],
+ ['c0',17.8,21.3,'pop'],['c1',18.2,21.3,'up'],['c2',19.1,21.3,'up'],
+ ['i1',21.5,25.0,'up'],['i2',22.1,25.0,'up'],['i3',23.0,25.0,'fade'],
+ ['k1',25.2,D+1,'up'],['k2',25.8,D+1,'up'],['k3',26.6,D+1,'pop'],['k4',26.9,D+1,'up'],['k5',27.3,D+1,'up'],['hd',27.3,D+1,'fade']
+];
+const IN=0.5,OUT=0.28;
+function seek(t){
+ for(const [id,a,b,ty] of S){
+  const el=$(id);const p=cl((t-a)/IN);const q=cl((b-t)/OUT);
+  let o=Math.min(eo(p),q),tr='';
+  if(ty==='up'){tr=`translateY(${(1-eo(p))*70 - (1-q)*40}px)`}
+  else if(ty==='pop'){const s=p<1?0.55+0.45*eb(p):1;tr=`scale(${s*(0.92+0.08*q)})`}
+  if(t<a||t>b)o=0;
+  el.style.opacity=o;el.style.transform=tr;
+ }
+
+ // card + dots
+ const ca=cl((t-10.0)/0.5),cb=cl((21.4-t)/0.3);const co=Math.min(eo(ca),cb);
+ $('card').style.opacity=co;$('card').style.transform=`translateY(${(1-eo(ca))*60}px)`;
+ $('dots').style.opacity=co;
+ [['d1',10.2,13.9],['d2',14.1,17.6],['d3',17.8,21.3]].forEach(([d,a,b])=>{$(d).style.width=(cl((t-a)/(b-a))*100)+'%'});
+ // background drift
+ $('bg').style.transform=`translate(${(t*14)%90}px,${(t*22)%90}px)`;
+ $('glow').style.transform=`translate(${Math.sin(t*.5)*120}px,${Math.cos(t*.4)*160}px)`;
+ $('glow2').style.transform=`translate(${Math.cos(t*.35)*140}px,${Math.sin(t*.45)*120}px)`;
+ // pulse CTA icon
+ if(t>27.2){$('k3').style.transform=`scale(${1+0.06*Math.sin((t-27.2)*6)})`}
+}
+window.seek=seek;window.DUR=D;
+if(!navigator.webdriver){const t0=performance.now();(function f(){seek(((performance.now()-t0)/1000)%D);requestAnimationFrame(f)})()}
+</script></body></html>

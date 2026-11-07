@@ -10,7 +10,7 @@ const [,, mode, out] = process.argv; // mode: "frames" (test stills) or "video"
   await p.evaluateHandle('document.fonts.ready');
   const D = await p.evaluate(() => window.DUR);
   if (mode === 'frames') {
-    for (const t of [2.4, 5.5, 8.6, 11.8, 18.8, 22.5, 27]) {
+    for (const t of (process.env.TS||"2.4,5.5,8.6,11.8,18.8,22.5,27").split(",").map(Number)) {
       await p.evaluate(t => seek(t), t);
       await p.screenshot({ path: path.join(__dirname, `f_${t}.png`) });
     }
