@@ -9,6 +9,7 @@
 - 9:16, 1080x1920, 30 fps, 25–40 detik, teks bergerak + SFX halus (tanpa narasi; belum ada TTS di cloud).
 - Latar gelap bergrid, aksen neon (kuning #FFD23F, merah muda #FF5A5F, hijau #5BE49B, biru), font Inter Display. Teks layar singkat, ≤ ~8 kata per baris.
 - Kerangka HEIA: Hook (0–2 dtk) → Empati → Isi (2–3 poin) → Aksi/CTA (≥2 dtk).
+- Narasi (sejak 2026-11-08): Agil membuat audio TTS sendiri di ElevenLabs. VO talent tetap untuk konten psikologi: **Jessica**. Naskah >60 detik, kerangka HEIA, tag ekspresi berbahasa Inggris dalam kurung siku, penutup CTA follow saja.
 - Template animasi: `tools/template.html` (fungsi `seek(t)`, `window.DUR`). Salin ke file baru, ganti teks/timing.
 
 ## Render
