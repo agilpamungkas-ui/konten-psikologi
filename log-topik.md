@@ -4,3 +4,4 @@
 |---|---|---|
 | 2026-11-08 | 1) Overthinking gara-gara ekonomi nggak pasti; 2) Enggan ke psikolog padahal nggak baik-baik saja; 3) Curhat ke AI: aman atau nggak; 4) Trend hopping; 5) Self-diagnosis dari konten psikologi viral | 1, lalu 2 |
 | 2026-11-13 | 1) Pacaran sama AI (kebutuhan belonging); 2) Cemas tiap baca berita politik; 3) Hari Ayah Nasional: figur ayah hadir secara emosional; 4) Nostalgia Gen Z pada era yang belum dialami; 5) Tren "Stop the Wedding": red flag sebelum menikah | 2 |
+| 2026-11-18 | 1) Laki-laki susah curhat (Hari Pria Internasional 19 Nov); 2) Brainstacking: lepas dari scroll; 3) Anak muda takut ambil risiko; 4) Antre konsultasi psikolog gratis di Jogja; 5) Tren foto kecil vs sekarang (self-continuity) | (menunggu) |
